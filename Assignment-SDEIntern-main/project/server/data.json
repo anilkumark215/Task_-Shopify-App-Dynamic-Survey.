@@ -1,0 +1,267 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@example.com",
+      "password": "$2a$10$XQxBJQzxPq.Oa1h0XZMcAOgwqQpD.Y4mtQKqR.zGt9B9bMsQrQJlW",
+      "name": "Admin User",
+      "role": "admin",
+      "createdAt": "2023-11-01T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "email": "user@example.com",
+      "password": "$2a$10$XQxBJQzxPq.Oa1h0XZMcAOgwqQpD.Y4mtQKqR.zGt9B9bMsQrQJlW",
+      "name": "Regular User",
+      "role": "user",
+      "createdAt": "2023-11-02T10:00:00Z"
+    },
+    {
+      "id": "1740676500661",
+      "email": "nishantpandit2004@gmail.com",
+      "password": "$2a$10$RgX/9Di5PXdwwad8n87lcuWsIRJOlQ4TNR9ksZe9ji2/pJX.GwiUG",
+      "name": "Nishant Dixit",
+      "role": "user",
+      "createdAt": "2025-02-27T17:15:00.661Z"
+    },
+    {
+      "id": "1740676673760",
+      "email": "sachin@gmail.com",
+      "password": "$2a$10$QEhO.0P.xkGJgtOm/mXDiO7mSPpwiaNhPvcoINkuX5rsKN7O.ndoO",
+      "name": "sachin",
+      "role": "user",
+      "createdAt": "2025-02-27T17:17:53.760Z"
+    },
+    {
+      "id": "1740718267482",
+      "email": "dixitnishant044@gmail.com",
+      "password": "$2a$10$d6PCvhRsZqOHRtpRnP68Q.PZ8sTchgdIFpGskHfgHFH/rtWdMCUOi",
+      "name": "nishant",
+      "role": "user",
+      "createdAt": "2025-02-28T04:51:07.482Z"
+    }
+  ],
+  "surveys": [
+    {
+      "id": "1",
+      "title": "Shopping Experience Survey",
+      "description": "Help us improve your shopping experience",
+      "active": true,
+      "questions": [
+        {
+          "id": "q1",
+          "text": "How did you hear about our store?",
+          "type": "radio",
+          "required": true,
+          "options": [
+            {
+              "value": "social",
+              "label": "Social Media"
+            },
+            {
+              "value": "search",
+              "label": "Search Engine"
+            },
+            {
+              "value": "friend",
+              "label": "Friend Recommendation"
+            },
+            {
+              "value": "other",
+              "label": "Other"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "text": "Which products are you interested in?",
+          "type": "checkbox",
+          "required": false,
+          "options": [
+            {
+              "value": "clothing",
+              "label": "Clothing"
+            },
+            {
+              "value": "accessories",
+              "label": "Accessories"
+            },
+            {
+              "value": "electronics",
+              "label": "Electronics"
+            },
+            {
+              "value": "home",
+              "label": "Home Goods"
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "text": "Any additional feedback about our products?",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "createdAt": "2023-11-01T12:00:00Z"
+    }
+  ],
+  "responses": [
+    {
+      "id": "r1",
+      "surveyId": "1",
+      "customerId": "cust123",
+      "answers": [
+        {
+          "questionId": "q1",
+          "value": "social"
+        },
+        {
+          "questionId": "q2",
+          "values": [
+            "clothing",
+            "accessories"
+          ]
+        },
+        {
+          "questionId": "q3",
+          "value": "Love the quality of your products!"
+        }
+      ],
+      "submittedAt": "2023-11-02T15:30:00Z"
+    },
+    {
+      "id": "r2",
+      "surveyId": "1",
+      "customerId": "cust456",
+      "answers": [
+        {
+          "questionId": "q1",
+          "value": "friend"
+        },
+        {
+          "questionId": "q2",
+          "values": [
+            "electronics",
+            "home"
+          ]
+        },
+        {
+          "questionId": "q3",
+          "value": "Would love to see more eco-friendly options."
+        }
+      ],
+      "submittedAt": "2023-11-03T09:15:00Z"
+    },
+    {
+      "id": "r3",
+      "surveyId": "1",
+      "customerId": "cust789",
+      "answers": [
+        {
+          "questionId": "q1",
+          "value": "search"
+        },
+        {
+          "questionId": "q2",
+          "values": [
+            "clothing"
+          ]
+        },
+        {
+          "questionId": "q3",
+          "value": "Great selection, but shipping could be faster."
+        }
+      ],
+      "submittedAt": "2023-11-04T14:45:00Z"
+    },
+    {
+      "id": "1740676525564",
+      "surveyId": "1",
+      "customerId": "cust3916",
+      "answers": [
+        {
+          "questionId": "q1",
+          "value": "social"
+        },
+        {
+          "questionId": "q2",
+          "values": [
+            "electronics"
+          ]
+        },
+        {
+          "questionId": "q3",
+          "value": ""
+        }
+      ],
+      "submittedAt": "2025-02-27T17:15:25.564Z"
+    },
+    {
+      "id": "1740676634727",
+      "surveyId": "1",
+      "customerId": "cust435",
+      "answers": [
+        {
+          "questionId": "q1",
+          "value": "search"
+        },
+        {
+          "questionId": "q2",
+          "values": [
+            "home"
+          ]
+        },
+        {
+          "questionId": "q3",
+          "value": ""
+        }
+      ],
+      "submittedAt": "2025-02-27T17:17:14.727Z"
+    },
+    {
+      "id": "1740676699461",
+      "surveyId": "1",
+      "customerId": "cust6045",
+      "answers": [
+        {
+          "questionId": "q1",
+          "value": "social"
+        },
+        {
+          "questionId": "q2",
+          "values": [
+            "home"
+          ]
+        },
+        {
+          "questionId": "q3",
+          "value": "very good"
+        }
+      ],
+      "submittedAt": "2025-02-27T17:18:19.461Z"
+    },
+    {
+      "id": "1740718315924",
+      "surveyId": "1",
+      "customerId": "cust6229",
+      "answers": [
+        {
+          "questionId": "q1",
+          "value": "search"
+        },
+        {
+          "questionId": "q2",
+          "values": [
+            "clothing"
+          ]
+        },
+        {
+          "questionId": "q3",
+          "value": "i like these stock"
+        }
+      ],
+      "submittedAt": "2025-02-28T04:51:55.924Z"
+    }
+  ]
+}
